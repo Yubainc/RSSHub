@@ -29294,7 +29294,7 @@ export default {
             "target": "/manga/:id"
           }
         ],
-        "name": "カドコミ(Kadocomi)漫画详情",
+        "name": "漫画详情",
         "maintainers": [
           "xiaobailoves"
         ],
@@ -97085,8 +97085,8 @@ export default {
         },
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
-          "antiCrawler": true,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
