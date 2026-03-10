@@ -29267,6 +29267,46 @@
     "url": "comic-fuz.com",
     "lang": "ja"
   },
+  "comic-walker": {
+    "routes": {
+      "/manga/:id": {
+        "path": "/manga/:id",
+        "categories": [
+          "anime"
+        ],
+        "example": "/comic-walker/manga/KC_006778_S",
+        "parameters": {
+          "id": "カドコミ(Kadocomi)中对应的作品workCode，例如 KC_006778_S"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "comic-walker.com/detail/:id"
+            ],
+            "target": "/manga/:id"
+          }
+        ],
+        "name": "カドコミ(Kadocomi)漫画详情",
+        "maintainers": [
+          "xiaobailoves"
+        ],
+        "location": "manga.ts",
+        "module": "() => import('@/routes/comic-walker/manga.ts')"
+      }
+    },
+    "name": "カドコミ(Kadocomi)",
+    "apiRoutes": {},
+    "url": "comic-walker.com",
+    "lang": "ja"
+  },
   "comicat": {
     "routes": {
       "/search/:keyword": {
@@ -106648,6 +106688,31 @@
         "description": "| 重要通知 | 管理服务 | 创新实践 | \n| -------- | -------- |-------- |\n| zytz     | glfw     | cxsj    | ",
         "location": "ygb.ts",
         "module": "() => import('@/routes/sdu/ygb.ts')"
+      },
+      "/yz/:type?": {
+        "path": "/yz/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/sdu/yz/tzgg",
+        "parameters": {
+          "type": "默认为`tzgg`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "研究生招生信息网",
+        "maintainers": [
+          "niuyi1017"
+        ],
+        "description": "| 通知公告 | 招生拓展 | 政策文件 | \n| -------- | -------- |-------- |\n| tzgg     | zstz     | zcwj    | ",
+        "location": "yz.ts",
+        "module": "() => import('@/routes/sdu/yz.ts')"
       }
     },
     "name": "山东大学",
