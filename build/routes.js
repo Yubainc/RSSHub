@@ -26810,6 +26810,76 @@ export default {
     },
     "lang": "zh-CN"
   },
+  "claude": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "categories": [
+          "programming"
+        ],
+        "example": "/claude/blog",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "claude.com/blog"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "name": "Blog",
+        "maintainers": [
+          "zhenlohuang"
+        ],
+        "url": "claude.com/blog",
+        "location": "blog.ts",
+        "module": () => import('@/routes/claude/blog.ts')
+      },
+      "/code/changelog": {
+        "path": "/code/changelog",
+        "name": "Code Changelog",
+        "url": "code.claude.com",
+        "maintainers": [
+          "rmaced0"
+        ],
+        "example": "/claude/code/changelog",
+        "categories": [
+          "program-update"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "code.claude.com/docs/en/changelog"
+            ],
+            "target": "/code/changelog"
+          }
+        ],
+        "location": "code-changelog.ts",
+        "module": () => import('@/routes/claude/code-changelog.ts')
+      }
+    },
+    "name": "Claude",
+    "apiRoutes": {},
+    "url": "claude.com",
+    "lang": "en"
+  },
   "clickme": {
     "routes": {
       "/:site/:grouping/:name": {
