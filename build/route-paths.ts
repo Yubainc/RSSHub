@@ -1918,6 +1918,7 @@ export type RoutePath =
   | `/jlu/ccst/xwzx/:category`
   | `/jlu/jwc`
   | `/jlu/phy/:category/:column/:subcolumn?`
+  | `/jma/wxchart/:type?`
   | `/jnu/yw/:type?`
   | `/joins/chinese/:category?`
   | `/joneslanglasalle/:language?/:category{.+}?`
@@ -2536,6 +2537,7 @@ export type RoutePath =
   | `/oevw/:json?`
   | `/ofweek/news`
   | `/oilchem/:type?/:category?/:subCategory?`
+  | `/okayafrica/music/latest`
   | `/okx/:section?`
   | `/olevod/vod/:id`
   | `/olevod/vodlist`
